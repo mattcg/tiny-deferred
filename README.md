@@ -19,7 +19,7 @@ var def = new Deferred()
 		});
 ```
 
-Once an instance has been resolved or rejected, it can't be resolved or rejected again. However, adding a `done', `fail` or `always` callback to a rejected object will result in the callback function being called immediately with the expected arguments and context.
+Once an instance has been resolved or rejected, it can't be resolved or rejected again. However, adding a `done`, `fail` or `always` callback to a rejected object will result in the callback function being called immediately with the expected arguments and context.
 
 ```javascript
 def.resolve({
@@ -28,7 +28,7 @@ def.resolve({
 
 // Many lines of code later...
 def.done(function(response) {
-		console.log(response.message); // Logs 'Very important message' immediately
+		console.log(response.message); // Logs 'Very important message' immediately.
 	})
 	.fail(function() {
 		console.log(response.error); // Will never be called. In fact, the callback is discarded immediately.
@@ -45,7 +45,7 @@ def.done(function(response) {
 		return templateEngine.render('my-template', response);
 	});
 
-// May lines of code later...
+// Many lines of code later...
 def.done(function(html) {
 		document.body.innerHTML = html;
 	});
