@@ -50,3 +50,15 @@ def.done(function(html) {
 		document.body.innerHTML = html;
 	});
 ```
+
+Context can be supplied to callbacks by calling the `resolveWith` or `rejectWith` methods. The context is the same for all callbacks, even those added and fired after resolution or rejection.
+
+```javascript
+new Deferred()
+	.done(function(message) {
+		this.log(message); // Logs 'Hai' to the console.
+	})
+	.resolveWith(console, 'Hai');
+```
+
+Arrays of function may be passed to the callback methods.
