@@ -188,8 +188,8 @@ Deferred.prototype.resolve = function() {
 		// Purge all callbacks
 		this.events = null;
 
-		call(done, this.context, arguments);
-		call(always, this.context, arguments);
+		call(done, this.context, this.args);
+		call(always, this.context, this.args);
 	}
 
 	return this;
@@ -233,8 +233,8 @@ Deferred.prototype.rejectWith = function() {
 		// Purge all callbacks
 		this.events = null;
 
-		call(fail, this.context, arguments);
-		call(always, this.context, arguments);
+		call(fail, this.context, this.args);
+		call(always, this.context, this.args);
 	}
 
 	return this;
