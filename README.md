@@ -61,4 +61,4 @@ new Deferred()
 	.resolveWith(console, 'Hai');
 ```
 
-Arrays of function may be passed to the callback methods.
+Arrays of functions may be passed to the callback methods.
