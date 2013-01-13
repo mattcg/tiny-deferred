@@ -1,0 +1,10 @@
+{
+  "name": "tiny-deferred",
+  "description": "A tiny deferred object constructor.",
+  "version": "1.0.0",
+  "main": "lib/deferred.js",
+  "scripts": [
+    "lib/deferred.js"
+  ],
+  "license": "MIT"
+}
