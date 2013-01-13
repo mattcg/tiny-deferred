@@ -1,9 +1,9 @@
 {
 	"name": "tiny-deferred",
 	"version": "1.0.0",
-	"author": "Matthew Caruana Galizia <m@m.cg>",
+	"author": "Matthew Caruana Galizia <m@m.cg> (http://m.cg/)",
 	"description": "A tiny deferred object constructor",
-	"main": "./deferred.js",
+	"main": "lib/deferred.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mattcg/tiny-deferred.git"
